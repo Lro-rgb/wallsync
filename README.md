@@ -6,6 +6,15 @@ color scheme updates to match — Waybar, Hyprland borders, Rofi, wlogout, and A
 Part of my broader setup — see [arch-hyprland-rice](https://github.com/Lro-rgb/arch-hyprland-rice)
 for the rest (Hyprland config, terminal, shell, file manager).
 
+## In action
+
+Same terminal and bar, two different wallpapers — everything down to the window
+border color comes from whatever image is currently set as the wallpaper.
+
+| Before | After |
+|--------|-------|
+| ![before](./assets/before.png) | ![after](./assets/after.png) |
+
 ## How it works
 
 ```
