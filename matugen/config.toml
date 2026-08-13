@@ -5,8 +5,8 @@ input_path = "~/.config/matugen/templates/alacritty.toml"
 output_path = "~/.config/alacritty/colors.toml"
 
 [templates.hyprland]
-input_path = "~/.config/matugen/templates/hyprland.conf"
-output_path = "~/.config/hypr/colors.conf"
+input_path = "~/.config/matugen/templates/hyprland.lua"
+output_path = "~/.config/hypr/colors.lua"
 post_hook = "hyprctl reload"
 
 [templates.waybar]

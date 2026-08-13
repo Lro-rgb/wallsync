@@ -20,7 +20,7 @@ border color comes from whatever image is currently set as the wallpaper.
 ```
 waypaper (picker)  →  matugen (extract palette)  →  templates render into:
                                                         waybar/colors.css
-                                                        hypr/colors.conf
+                                                        hypr/colors.lua
                                                         rofi/*.rasi
                                                         wlogout/colors.css
                                                         alacritty/colors.toml
