@@ -41,6 +41,10 @@ waypaper (picker)  →  matugen (extract palette)  →  templates render into:
 4. `matugen/refresh.sh` ties it together: runs matugen, then `hyprctl reload` and
    `pkill -SIGUSR2 waybar` so everything picks up the new colors live, no restart
    needed.
+5. `greetd/regreet-bg.sh` extends the same idea to the login screen: it grabs
+   whatever wallpaper is currently active, blurs it, and drops it where
+   [regreet](https://github.com/rharish101/ReGreet) reads its background from —
+   so the greeter matches the desktop instead of showing a static image.
 
 ## Layout
 
@@ -58,6 +62,8 @@ hypr/                 The script that ties waypaper + matugen together on wallpa
                       change, plus a generated-colors example (same idea as above)
 rofi/                 Scripts behind the Waybar power and Bluetooth icons — themed via
                       the rofi templates above (rofi-colors.rasi → powermenu.rasi)
+greetd/                greetd + regreet setup script, plus the script that syncs the
+                      login screen background to the current wallpaper
 ```
 
 Files named `*.generated-example.*` are checked in only as a reference for what
