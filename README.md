@@ -56,6 +56,8 @@ waybar/                Bar config + a snapshot of what a generated colors.css lo
                       by matugen at runtime, it's here just to show the output shape)
 hypr/                 The script that ties waypaper + matugen together on wallpaper
                       change, plus a generated-colors example (same idea as above)
+rofi/                 Scripts behind the Waybar power and Bluetooth icons — themed via
+                      the rofi templates above (rofi-colors.rasi → powermenu.rasi)
 ```
 
 Files named `*.generated-example.*` are checked in only as a reference for what
