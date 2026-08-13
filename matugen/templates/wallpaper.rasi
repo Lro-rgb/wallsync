@@ -1,0 +1,80 @@
+* {
+    background-color: transparent;
+    text-color: #{{colors.on_surface.default.hex_stripped}};
+    font: "JetBrainsMono Nerd Font 10";
+}
+
+window {
+    transparency: "real";
+    location: center;
+    anchor: center;
+    width: 900px;
+    height: 600px;
+    border: 2px solid;
+    border-color: #{{colors.primary.default.hex_stripped}};
+    border-radius: 16px;
+    background-color: #{{colors.background.default.hex_stripped}};
+}
+
+mainbox {
+    background-color: transparent;
+    children: [inputbar, listview];
+    spacing: 10px;
+    padding: 16px;
+}
+
+inputbar {
+    background-color: #{{colors.surface_variant.default.hex_stripped}};
+    border-radius: 8px;
+    padding: 8px 12px;
+    children: [prompt, entry];
+    spacing: 8px;
+}
+
+prompt {
+    background-color: transparent;
+    text-color: #{{colors.primary.default.hex_stripped}};
+}
+
+entry {
+    background-color: transparent;
+    text-color: #{{colors.on_surface.default.hex_stripped}};
+}
+
+listview {
+    background-color: transparent;
+    columns: 3;
+    lines: 3;
+    spacing: 10px;
+    fixed-height: true;
+    fixed-columns: true;
+    scrollbar: false;
+}
+
+element {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 4px;
+    orientation: vertical;
+    cursor: pointer;
+}
+
+element selected {
+    background-color: #{{colors.primary.default.hex_stripped}};
+    border: 2px solid;
+    border-color: #{{colors.primary.default.hex_stripped}};
+}
+
+element-icon {
+    size: 200px;
+    border-radius: 6px;
+    cursor: inherit;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: #{{colors.on_surface.default.hex_stripped}};
+    horizontal-align: 0.5;
+    cursor: inherit;
+    padding: 4px 0px;
+}

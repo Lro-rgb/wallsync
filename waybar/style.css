@@ -1,0 +1,75 @@
+@import "colors.css";
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
+    font-size: 11px;
+    font-weight: 600;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+#workspaces, #clock, #tray, #pulseaudio, #network, #cpu, #memory, #battery, #custom-power, #custom-bluetooth, #hyprland-submap {
+    background-color: @surface_container;
+    color: @on_background;
+    border-radius: 10px;
+    padding: 0 8px;
+    margin: 2px 0;
+}
+
+#workspaces { padding: 0 6px; }
+
+#workspaces button {
+    color: @outline;
+    padding: 0 6px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+#workspaces button.active {
+    color: @on_primary;
+    background-color: @primary;
+    padding: 0 10px;
+}
+
+#workspaces button.empty { color: alpha(@outline, 0.5); }
+#workspaces button:hover { background-color: alpha(@primary, 0.25); }
+
+#clock {
+    background-color: @primary;
+    color: @on_primary;
+    font-weight: 700;
+    padding: 0 16px;
+}
+
+#pulseaudio:hover, #network:hover, #cpu:hover, #memory:hover, #battery:hover, #tray:hover {
+    background-color: @surface_container_high;
+}
+
+#battery.warning { color: #f9a825; }
+#battery.critical { color: @error; background-color: alpha(@error, 0.15); }
+#battery.charging { color: @primary; }
+
+#custom-power {
+    color: @primary;
+    font-size: 15px;
+    padding: 0 14px;
+    transition: all 0.2s ease;
+}
+
+#custom-power:hover {
+    background-color: @primary;
+    color: @on_primary;
+}
+
+#tray { padding: 0 10px; }
+
+tooltip {
+    background-color: @surface_container;
+    border: 1px solid @outline;
+    border-radius: 10px;
+}
+
+tooltip label { color: @on_background; }

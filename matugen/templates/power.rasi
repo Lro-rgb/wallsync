@@ -1,0 +1,68 @@
+* {
+    background-color:   transparent;
+    text-color:         #{{colors.on_surface.default.hex_stripped}};
+    font:               "JetBrainsMono Nerd Font Mono 28";
+}
+
+window {
+    transparency:       "real";
+    location:           northeast;
+    anchor:             northeast;
+    x-offset:           -8px;
+    y-offset:           48px;
+    width:              320px;
+    height:             100px;
+    border-radius:      18px;
+    background-color:   #{{colors.surface.default.hex_stripped}}ee;
+    border-color:       #{{colors.primary.default.hex_stripped}}30;
+    border:             1px;
+}
+
+mainbox {
+    background-color:   transparent;
+    children:           [listview];
+    padding:            10px;
+}
+
+listview {
+    background-color:   transparent;
+    columns:            4;
+    lines:              1;
+    spacing:            8px;
+    fixed-height:       true;
+    fixed-columns:      true;
+    scrollbar:          false;
+}
+
+element {
+    background-color:   #ffffff08;
+    border-radius:      14px;
+    padding:            14px 8px;
+    orientation:        vertical;
+    cursor:             pointer;
+    border-color:       #ffffff15;
+    border:             1px;
+}
+
+element normal normal {
+    background-color:   #ffffff08;
+    text-color:         #{{colors.on_surface.default.hex_stripped}};
+}
+
+element selected normal {
+    background-color:   #{{colors.primary.default.hex_stripped}}25;
+    border-color:       #{{colors.primary.default.hex_stripped}}70;
+    border:             1px;
+    text-color:         #{{colors.primary.default.hex_stripped}};
+}
+
+element-icon {
+    size:               0px;
+}
+
+element-text {
+    background-color:   transparent;
+    horizontal-align:   0.5;
+    vertical-align:     0.5;
+    cursor:             inherit;
+}
